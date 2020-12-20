@@ -85,6 +85,12 @@
 		    <version>3.5.1</version>
 		</dependency>
 	</dependencies>
+	<repositories>
+    <repository>
+      <id>my-internal-site</id>
+      <url>https://thomascappe.herokuapp.com</url>
+    </repository>
+  </repositories>
 		<build>
 		    <plugins>
 		      <plugin>
