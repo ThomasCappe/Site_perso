@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"lang="fr">
+<head>
+<title>Présentation</title>
+<link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
+<link rel="stylesheet" type="text/css" href="CSS/demo.css" />
+<link rel="stylesheet" type="text/css" href="CSS/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+		<div class="container">
+			<div th:insert="~{fragments::banniere}"></div>
+			<header>
+				<h1>Ma présentation de mes expériences & formations<span>Qui suis-je ?</span></h1>	
+			</header> 
+			<section>
+			<article>
+				<img src="https://media-exp1.licdn.com/dms/image/C4D03AQFWg5Izxt7HMQ/profile-displayphoto-shrink_400_400/0/1607001652146?e=1613606400&v=beta&t=rus3SJQWpmdDbdz4FDqShKYxBjY6yYcrmpH9bT2UCgU">
+				<p class="article-titre">Thomas Cappe</p>
+			</article>
+		</section>
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+		</div>
+</body>
+</html>

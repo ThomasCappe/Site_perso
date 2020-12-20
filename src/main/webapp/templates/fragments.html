@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div th:fragment="banniere">
+				<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Présentation</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Recherche" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Recherche</span></a>
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-download" href="presentation">Présentation</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-illustrator">Pourquoi ce site</a></li>
+										<li><a class="gn-icon gn-icon-photoshop">Curriculum vitae</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Projets personnelles</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-article">Articles</a></li>
+										<li><a class="gn-icon gn-icon-pictures">Images</a></li>
+										<li><a class="gn-icon gn-icon-videos">Videos</a></li>
+									</ul>
+								</li>
+								<li><a class="gn-icon gn-icon-cog">Paramétres</a></li>
+								<li><a class="gn-icon gn-icon-help">Aide</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a id="btn-enu"href="home">Thomas CAPPE </a></li>
+				<li><a href="http://www.outils-web.com">Nouveau compte</a></li>
+				<li><a id="toggler"href="#">Connexion</a></li>
+				<li><div id="toggle">
+					<label for="name" id="label-email">E-mail:</label>
+					<input type="text" id="email"  maxlength="8" size="10">
+					<label for="name" id="label-mdp">Mot de passe:</label>
+					<input type="text" id="mdp" maxlength="8" size="10">
+					<img id="image_connexion"src="https://img.icons8.com/ios/30/000000/login-rounded-right--v1.png"/>
+				</div></li>
+			</ul>
+		</div>
+			
+			
+</body>
+</html>

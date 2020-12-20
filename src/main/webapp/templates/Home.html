@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"lang="fr">
+<head>
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
+<link rel="stylesheet" type="text/css" href="CSS/demo.css" />
+<link rel="stylesheet" type="text/css" href="CSS/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+		<div class="container">
+			<div th:insert="~{fragments::banniere}"></div>
+			<header>
+				<h1>Bienvenue sur mon site personnel<span>Cela vous permettra de me connaitre davantage et de prouver mes compétences</span></h1>	
+			</header> 
+			<section>
+			<article>
+				<div class="article-titre_description_lien">
+				<p class="article-titre">Projet 1</p>
+				<p class="article-description">Voici la description du projet numéro 1 </p>
+				<a class="article-lien" href="">suite</a>
+			</div>
+				<img class="article-image"src="https://www.so-inside.com/1149-medium_default/table-carree-bois-et-blanc-avec-rallonge-salta.jpg" alt="W3Schools.com">
+			</article>
+		</section>
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+		</div>
+</body>
+</html>
